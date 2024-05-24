@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.js"></script>
+    <title>Amazon</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="icon"><i class="fa-solid fa-qrcode fa-beat fa-3x"></i><p id="size">QR-generater</p></div>
+            <div class="space"></div>
+            <div class="home"><i class="fa-solid fa-house fa-2x"></i>Home</div>
+            <div class="login"><i class="fa-solid fa-user-lock fa-2x"></i>Login/Sign Up</div>
+        </div>
+        
+
+    </header>
+    <main>
+        <div class="container_ex">
+            <div class="outputcontainer">
+                <div class="data_display">
+                    <div class="input_ex space"><b class="inp" >Example Upi id :</b><p id="update_upid" class="ex_input_upi">aamirneni@fifederal</p></div>
+                    <div class="input_ex space"><b class="inp" >Example Name :</b><p id="update_name" class="ex_input_upi">Ashish Amirneni</p></div>
+                    <div class="input_ex space"><b class="inp" >Example Amount :</b><p id="update_amount" class="ex_input_upi">1000</p></div>
+                </div>
+                <div class="qr_display">
+                    <div id="qrCode"></div>
+                </div>
+            </div>
+            <div class="enter_upid space"><b class='in'>Input Upi-id: </b><p class="input_upi"><input id='upid' type="text" class="input_upi"/></p></div>
+            <div class="enter_name space"><b class='in'>Input your name: </b><p><input id="name_" type="text" class="input_upi"/></p></div>
+            <div class="enter_amount space"><b class='in'>Set Amount: </b><p><input id="amount" type="number" class="input_upi"/></p></div>
+            <div class="button1 space"><button class="enter " onclick="generateQRCode()">Submit</button></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
